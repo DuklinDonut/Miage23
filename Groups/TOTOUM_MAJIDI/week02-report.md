@@ -13,3 +13,13 @@
 - Nous avons pratiqué les concepts de "self" et "super" à travers des exercices de lookup. Ces exercices m'ont permis de comprendre que "self" représente le récepteur du message et que le processus du lookup commence dans la classe du récepteur en remontant la hiérarchie des classes si nécessaire. En ce qui concerne "super," j'ai appris que "super" représente également le récepteur du message mais il modifie le processus de recherche en commençant par la classe au-dessus de celle contenant l'expression "super," ce qui donne une recherche statique.
 
 - J'ai appris qu'il faut éviter la duplication car elle copie les bugs. Nous devons aussi éviter les nombres magiques dans le code et les longs messages en privilegiant de nombreux petits messages.
+
+### Ezzahra
+L'une des principales leçons de cette semaine a été de souligner l'importance de remplacer les structures conditionnelles statiques par l'envoi de messages aux objets, en exploitant les hiérarchies de classes. Cette approche permet à chaque objet de prendre des décisions concernant son comportement en fonction de sa propre classe. Ainsi, l'envoi de messages devient une démarche dynamique, tandis que les classes deviennent des représentations de ces choix potentiels. Lorsqu'un message est adressé à un objet, c'est la classe de cet objet qui détermine la méthode à exécuter.
+
+Mon apprentissage a également porté sur le concept d'héritage. Chaque classe a une seule superclasse, et dans le contexte de Pharo, toutes les classes héritent de la classe Object. L'héritage des variables est statique, déterminé lors de la définition de la classe, tandis que l'héritage du comportement est dynamique et se réalise au moment de l'exécution.
+
+Nous avons eu l'occasion de mettre en pratique les notions de "self" et "super" à travers des exercices de recherche. Cela m'a permis de comprendre que "self" représente le récepteur du message, et le processus de recherche commence dans la classe du récepteur, remontant la hiérarchie des classes si nécessaire. En ce qui concerne "super," j'ai appris que ce terme représente également le récepteur du message, mais il modifie le processus de recherche en débutant par la classe supérieure à celle contenant l'expression "super," créant ainsi une recherche statique.
+
+Ainsi, j'ai retenu l'importance d'éviter la duplication, car elle entraîne la copie de défauts potentiels. De plus, il est recommandé d'éviter les "nombres magiques" dans le code, et de favoriser l'utilisation de nombreux petits messages plutôt que de longs messages.
+
